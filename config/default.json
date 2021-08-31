@@ -1,0 +1,19 @@
+{
+    "db-connections": {
+        "mongodb":{
+            "host": "cluster0.ajxyt.mongodb.net",
+            "user": "api_rest_user",
+            "password": "7sJrUAOF7dzTw5Ma",
+            "dbname":"testDB"
+        }
+    },
+    "secretKeys": {
+        "cryptojs": "aSbz69fNmHWrXLcP",
+        "jwt": "ABC@2020*"
+    },
+    "roles": {
+        "student": 1,
+        "teacher": 2
+    },
+    "server-port": 3000
+}
