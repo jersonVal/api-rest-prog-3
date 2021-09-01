@@ -3,7 +3,7 @@ import config from 'config';
 import bodyParser from 'body-parser';
 import getIp from './middleware/getIpAddress.js';
 import tkFn from './middleware/verifyToken.js';
-import db from './model/db-connection/mongodb.js'
+import db from './model/db-connection/mongodb.js';
 
 // Routes***********
 import studentRoutes from './routes/student.route.js'
