@@ -9,6 +9,9 @@ import db from './model/db-connection/mongodb.js';
 import studentRoutes from './routes/student.route.js'
 import teacherRoutes from './routes/teacher.route.js'
 import userRoutes from './routes/user.route.js'
+import courseRoutes from './routes/course.routes.js'
+import groupRoutes from './routes/group.routes.js'
+import periodRoutes from './routes/period.routes.js'
 
 
 db();
@@ -32,10 +35,13 @@ app.get('/', (req, res, next)=>{
 userRoutes(app);
 
 //token middleware
-app.use(tkFn)
+// app.use(tkFn)
 
 studentRoutes(app);
 teacherRoutes(app);
+courseRoutes(app);
+groupRoutes(app);
+periodRoutes(app);
 
 
 

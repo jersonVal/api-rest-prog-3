@@ -1,4 +1,5 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
+
 
 // schema creation
 const periodSchema = new mongoose.Schema({
