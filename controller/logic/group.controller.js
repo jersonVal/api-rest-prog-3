@@ -81,7 +81,7 @@ const getByCodeGroup = (req, res, next) =>{
     });
 };
 
-const deleteGroup = () => {
+const deleteGroup = (req, res, next) => {
     groupDto.delete({_id: req.body.id},(err,data)=>{
         if(err){
             return res.status(400).json(

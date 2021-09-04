@@ -77,7 +77,7 @@ const getByCodeCourse = (req, res, next) =>{
     });
 };
 
-const deleteCourse = () => {
+const deleteCourse = (req, res, next) => {
     courseDto.delete({_id: req.body.id},(err,data)=>{
         if(err){
             return res.status(400).json(
